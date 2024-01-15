@@ -1,0 +1,17 @@
+.gallery{
+    margin-top: 160px;
+    .gallery__head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        .gallery__title{}
+        .gallery__link{
+            span{
+                margin-right: 10px;
+            }
+            svg{}
+        }
+    }
+}

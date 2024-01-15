@@ -1,9 +1,70 @@
-body{
-    font-family: $fontMain;
+body {
 
+    &,
+    & a,
+    & button {
+        font-family: $fontMain;
+        font-size: 16px;
+        font-weight: 400;
+        color: #212121;
+        line-height: normal;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    max-width: calc(1240px + (60px * 2));
+}
+
+.colorized {
+    color: #ca9eb0;
+}
+
+.btn{
+    background: #EDD7E0 !important;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    &:hover{
+        
+    }
+
+    &.btn_cart {
+        padding: 18px 35px 18px 35px;
+        background: #ffffff !important;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 4px;
+        
+        svg{
+            margin-right: 20px;
+        }
+    }
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 38px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h4 {
     font-size: 16px;
-    font-weight: 400;
-    color: #212121;
-    line-height: normal;
-
+    font-weight: 500;
+}
+h5 {
+    font-size: 14px;
+    font-weight: 300;
 }

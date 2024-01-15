@@ -1,0 +1,15 @@
+@mixin title-text-indent{
+    margin-bottom: 60px;
+
+    @media(max-width: 774px){
+        margin-bottom: 48px;
+    }
+}
+
+@mixin resetBtnStyles{
+    outline: none;
+    border: none;
+    background: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
