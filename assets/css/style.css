@@ -520,7 +520,8 @@ h5 {
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
 }
 .cards .card {
   position: relative;
@@ -910,6 +911,9 @@ h5 {
   right: 0;
 }
 
+.tiles {
+  margin-bottom: 160px;
+}
 .tiles .tiles__title {
   margin-bottom: 65px;
 }/*# sourceMappingURL=style.css.map */
