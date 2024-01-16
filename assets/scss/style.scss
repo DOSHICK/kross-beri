@@ -4,9 +4,13 @@
 @import "./base/mixins";
 @import "./base/stable";
 
+@import "./layout/header";
+@import "./layout/footer";
 
 @import "./components/offer";
 @import "./components/product";
 @import "./components/gallery";
 @import "./components/cards";
 @import "./components/category";
+@import "./components/stats";
+@import "./components/reviews";

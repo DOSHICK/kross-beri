@@ -1,0 +1,45 @@
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    .review {
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding: 20px;
+
+        min-height: 340px;
+        
+        .review__head {
+            margin-bottom: 40px;
+            .review__info {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                margin-bottom: 10px;
+
+                .review__img {
+                    margin-right: 20px;
+                }
+                .review__name {
+                }
+            }
+
+            .review__stats {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .review__stars {
+                }
+                .review__date {
+                }
+            }
+        }
+
+        .review__content {
+            .review__text {
+            }
+        }
+    }
+}

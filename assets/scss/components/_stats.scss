@@ -1,0 +1,43 @@
+.stats {
+    margin-top: 160px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    .stats__img {
+        height: calc(100% - 10px);
+        align-self: flex-end;
+    }
+    .stats__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .stats__text {
+            .stats__title {
+                font-size: 38px;
+                font-weight: 300;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            .stats__undertitle {
+            }
+        }
+
+        .stats__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .stats__item {
+                .stats__value {
+                    color:  #ca9eb0;
+                    font-size: 38px;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                }
+                .stats__name {
+                }
+            }
+        }
+    }
+}

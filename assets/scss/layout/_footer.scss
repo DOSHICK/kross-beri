@@ -1,0 +1,102 @@
+.footer {
+    margin-top: 160px;
+
+    background: #212121;
+    color: #ffffff40;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .footer__wrapper {
+        .footer__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .footer__block {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                grid-gap: 65px;
+
+                &.footer__block_logo {
+                }
+
+                &.footer__block_nav {
+                    .footer__list-title {
+                        margin-bottom: 20px;
+                    }
+                    .footer__list {
+                        ul {
+                            li {
+                                margin-bottom: 10px;
+                                &:last-child {
+                                    margin-bottom: inherit;
+                                }
+                                a {
+                                    color: #ffffff;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+
+                        &.footer__list_socials {
+                            ul {
+                                display: flex;
+                                flex-direction: row;
+
+                                li {
+                                    margin-bottom: 10px;
+                                    margin-right: 10px;
+                                    &:last-child {
+                                        margin-bottom: inherit;
+                                        margin-right: inherit;
+                                    }
+                                    a {
+                                        color: #ffffff;
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.footer__block_button {
+                    width: 302px;
+                    height: 216px;
+
+                    margin-left: 50px;
+
+                    background: #f3f3f3;
+                    border-radius: 4px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    padding: 20px;
+
+                    svg {
+                        align-self: flex-end;
+                    }
+                    span {
+                        color: #212121;
+                    }
+
+                    transition: all 0.3s ease 0s;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footer__copyright {
+            margin-top: 20px;
+            p {
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: 300;
+                &:last-child {
+                    margin-bottom: inherit;
+                }
+            }
+        }
+    }
+}
