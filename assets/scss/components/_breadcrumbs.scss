@@ -1,0 +1,42 @@
+.breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .breadcrumbs__item {
+        position: relative;
+        padding-left: 10px;
+        padding-right: calc(10px + 17px);
+        
+
+        &::after {
+            content: url("../images/breadcrumbs-arrow.svg");
+            opacity: 0.2;
+            position: absolute;
+            display: block;
+            top: 50%;
+            transform: translateY(calc(-50% + 2px));
+            right: 0;
+        }
+
+        &:first-child{
+            padding-left: unset;
+        }
+
+        &:last-child {
+            a{
+                color: #212121;
+            }
+            &::after {
+                content: unset;
+            }
+        }
+
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            color: #21212140;
+        }
+    }
+}
