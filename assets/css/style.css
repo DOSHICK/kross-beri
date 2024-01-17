@@ -565,6 +565,7 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease 0s;
 }
 .cards .card .card__info .card__options .add-to-cart .add-to-cart__minus {
   outline: none;
@@ -580,6 +581,16 @@ h5 {
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
+.cards .card .card__info .card__options .add-to-cart > button g {
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.cards .card .card__info .card__options .add-to-cart > button:hover g {
+  opacity: 1;
+}
+.cards .card .card__info .card__options .add-to-cart:hover {
+  border: 1px solid #212121;
+}
 .cards .card .card__info .card__options .card__cart {
   outline: none;
   border: none;
@@ -592,6 +603,11 @@ h5 {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.cards .card .card__info .card__options .card__cart:hover {
+  border-color: #212121;
 }
 .cards .card .card__favorite {
   outline: none;
@@ -729,9 +745,12 @@ h5 {
 }
 .filters .filters__list .filters__item .filters__head span {
   margin-right: 6px;
+  color: rgba(33, 33, 33, 0.4392156863);
+  transition: all 0.3s ease 0s;
 }
 .filters .filters__list .filters__item .filters__head .filters__condition {
   transform: rotate(180deg) translateY(-2px);
+  transition: all 0.3s ease 0s;
 }
 .filters .filters__sort {
   display: grid;
@@ -777,6 +796,15 @@ h5 {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   position: relative;
+}
+.filters .filters__modal-trigger select {
+  display: none;
+}
+.filters .filters__modal-trigger:hover .filters__head span {
+  color: #212121;
+}
+.filters .filters__modal-trigger:hover .filters__head .filters__condition {
+  transform: rotateY(180deg);
 }
 .filters .filters__modal-trigger:hover .filters__modal-body {
   display: block;

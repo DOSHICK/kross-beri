@@ -46,6 +46,7 @@
                <li
                   class="header__item header__modal-trigger header__modal-trigger_low"
                >
+
                   <a href="#"> Популярное </a>
 
                   <div class="header__modal-window">
@@ -214,8 +215,9 @@
 
             <div class="filters container">
                <div class="filters__list">
-                  <div class="filters__item filters__modal-trigger">
+                  <div class="filters__item filters__modal-trigger filters__modal-trigger_price">
                      <div class="filters__head">
+                        <!-- <select name="filter-price" id="filter-price"></select> -->
                         <span>Цена</span>
                         <svg
                            class="filters__condition"
@@ -241,12 +243,13 @@
                               <input type="text" placeholder="до 18.000 ₽" />
                            </div>
 
-                           <button class="filters__submit">Применить</button>
+                           <button class="filters__submit" id="filters-price-submit">Применить</button>
                         </div>
                      </div>
                   </div>
 
-                  <div class="filters__item filters__modal-trigger">
+                  <div class="filters__item filters__modal-trigger filters__modal-trigger_select">
+                     <select name="filter-size" id="filter-size"></select>
                      <div class="filters__head">
                         <span>Размер обуви</span>
                         <svg
@@ -269,23 +272,24 @@
                               <p class="filters__size-title">EUR</p>
                               <div class="filters__size-grid">
                                  
-                                 <button class="filters__size-btn">35</button>
-                                 <button class="filters__size-btn active">36</button>
-                                 <button class="filters__size-btn">37</button>
-                                 <button class="filters__size-btn">38</button>
-                                 <button class="filters__size-btn">39</button>
-                                 <button class="filters__size-btn">40</button>
-                                 <button class="filters__size-btn">41</button>
-                                 <button class="filters__size-btn">42</button>
-                                 <button class="filters__size-btn">43</button>
-                                 <button class="filters__size-btn">44</button>
+                                 <button value="35" class="filters__size-btn">35</button>
+                                 <button value="36" class="filters__size-btn">36</button>
+                                 <button value="37" class="filters__size-btn">37</button>
+                                 <button value="38" class="filters__size-btn">38</button>
+                                 <button value="39" class="filters__size-btn">39</button>
+                                 <button value="40" class="filters__size-btn">40</button>
+                                 <button value="41" class="filters__size-btn">41</button>
+                                 <button value="42" class="filters__size-btn">42</button>
+                                 <button value="43" class="filters__size-btn">43</button>
+                                 <button value="44" class="filters__size-btn">44</button>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
 
-                  <div class="filters__item filters__modal-trigger">
+                  <div class="filters__item filters__modal-trigger filters__modal-trigger_select">
+                     <select name="filter-season" id="filter-season"></select>
                      <div class="filters__head">
                         <span>Сезон</span>
                         <svg
@@ -305,26 +309,28 @@
                      <div class="filters__body filters__modal-body">
                         <div class="filters__body-content">
                            <div class="filters__select">
-                              <button class="filters__option">
+                              <button class="filters__option" value="summer">
                                  Лето
                               </button>
-                              <button class="filters__option">
+                              <button class="filters__option" value="autumn">
                                  Осень
                               </button>
-                              <button class="filters__option active">
+                              <button class="filters__option" value="winter">
                                  Зима
                               </button>
-                              <button class="filters__option">
+                              <button class="filters__option" value="spring">
                                  Весна
                               </button>
-                              <button class="filters__option">
+                              <button class="filters__option" value="demi-season">
                                  Демисезон
                               </button>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="filters__item filters__modal-trigger">
+                  <div class="filters__item filters__modal-trigger filters__modal-trigger_select">
+                     <select name="filter-brand" id="filter-brand"></select>
+
                      <div class="filters__head">
                         <span>Бренд</span>
                         <svg
@@ -344,13 +350,13 @@
                      <div class="filters__body filters__modal-body">
                         <div class="filters__body-content">
                            <div class="filters__select">
-                              <button class="filters__option">
+                              <button class="filters__option" value="adidas">
                                  Adidas
                               </button>
-                              <button class="filters__option active">
+                              <button class="filters__option" value="nike">
                                  Nike
                               </button>
-                              <button class="filters__option ">
+                              <button class="filters__option " value="converse">
                                  Converse
                               </button>
                               
@@ -358,7 +364,9 @@
                         </div>
                      </div>
                   </div>
-                  <div class="filters__item filters__modal-trigger">
+                  <div class="filters__item filters__modal-trigger filters__modal-trigger_select">
+                     <select name="filter-category" id="filter-category"></select>
+
                      <div class="filters__head">
                         <span>Категория</span>
                         <svg
@@ -378,25 +386,25 @@
                      <div class="filters__body filters__modal-body">
                         <div class="filters__body-content">
                            <div class="filters__select">
-                              <button class="filters__option">
+                              <button class="filters__option" value="all">
                                  Все категории
                               </button>
-                              <button class="filters__option">
+                              <button class="filters__option" value="sneakers2">
                                  Кроссовки
                               </button>
-                              <button class="filters__option active">
+                              <button class="filters__option" value="sneakers">
                                  Кеды
                               </button>
-                              <button class="filters__option">
+                              <button class="filters__option" value="boots">
                                  Ботинки
                               </button>
-                              <button class="filters__option">
+                              <button class="filters__option" value="ugg">
                                  Угги
                               </button>
-                              <button class="filters__option">
+                              <button class="filters__option" value="moonwalkers">
                                  Луноходы
                               </button>
-                              <button class="filters__option">
+                              <button class="filters__option" value="accessories">
                                  Аксессуары
                               </button>
                            </div>
@@ -413,6 +421,7 @@
                   </div>
 
                   <div class="filters__sort-wrapper filters__modal-trigger">
+                     <select name="filters-sort" id="filters-sort"></select>
                      <button class="filters__sort-btn">
                         <svg
                            xmlns="http://www.w3.org/2000/svg"
@@ -1776,5 +1785,8 @@
             </div>
          </div>
       </footer>
+
+
+      <script src="./assets/js/filters.js"></script>
    </body>
 </html>

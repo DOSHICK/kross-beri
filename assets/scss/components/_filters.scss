@@ -19,9 +19,12 @@
             .filters__head {
                 span {
                     margin-right: 6px;
+                    color: #21212170;
+                    transition: all 0.3s ease 0s;
                 }
                 .filters__condition {
                     transform: rotate(180deg) translateY(-2px);
+                    transition: all 0.3s ease 0s;
                 }
             }
 
@@ -86,7 +89,23 @@
         transition: all 0.3s ease 0s;
         cursor: pointer;
         position: relative;
+
+        select{
+            display: none;
+        }
+
         &:hover {
+            .filters__head{
+
+                span{
+                    color: #212121;
+                }
+
+                .filters__condition{
+                    transform: rotateY(180deg);
+                }
+
+            }
             .filters__modal-body {
                 display: block;
             }
