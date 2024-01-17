@@ -1,5 +1,5 @@
 .tiles{
-    margin-bottom: 160px;
+    @include sectionMarginBottom;
     .tiles__title{
         margin-bottom: 65px;
     }

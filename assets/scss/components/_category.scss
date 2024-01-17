@@ -1,5 +1,5 @@
 .category {
-    margin-top: 160px;
+    @include sectionMargin;
     .category__title {
         @include title-text-indent;
     }

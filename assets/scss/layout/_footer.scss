@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 160px;
+    @include sectionMargin;
 
     background: #212121;
     color: #ffffff40;
@@ -95,6 +95,115 @@
                 font-weight: 300;
                 &:last-child {
                     margin-bottom: inherit;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        .footer__wrapper {
+            .footer__content {
+                .footer__block {
+                    &.footer__block_logo {
+                    }
+
+                    &.footer__block_nav {
+                        .footer__list-title {
+                        }
+                        .footer__list {
+                            ul {
+                                li {
+                                    &:last-child {
+                                    }
+                                    a {
+                                    }
+                                }
+                            }
+
+                            &.footer__list_socials {
+                                ul {
+                                    li {
+                                        &:last-child {
+                                        }
+                                        a {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.footer__block_button {
+                        display: none;
+                        svg {
+                        }
+                        span {
+                        }
+                    }
+                }
+            }
+
+            .footer__copyright {
+                p {
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        display: none;
+        .footer__wrapper {
+            .footer__content {
+                .footer__block {
+                    &.footer__block_logo {
+                    }
+
+                    &.footer__block_nav {
+                        .footer__list-title {
+                        }
+                        .footer__list {
+                            ul {
+                                li {
+                                    &:last-child {
+                                    }
+                                    a {
+                                    }
+                                }
+                            }
+
+                            &.footer__list_socials {
+                                ul {
+                                    li {
+                                        &:last-child {
+                                        }
+                                        a {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.footer__block_button {
+                        display: none;
+                        svg {
+                        }
+                        span {
+                        }
+                    }
+                }
+            }
+
+            .footer__copyright {
+                p {
+                    &:last-child {
+                    }
                 }
             }
         }

@@ -69,8 +69,7 @@
                     }
 
                     &:hover {
-                    border: 1px solid #212121; //border-opacity 14%
-                        
+                        border: 1px solid #212121; //border-opacity 14%
                     }
                 }
 
@@ -97,6 +96,52 @@
             position: absolute;
             top: 10px;
             right: 10px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        .card {
+            .card__img {
+            }
+            .card__name {
+            }
+            .card__info {
+                .card__price {
+                }
+                .card__options {
+                    .add-to-cart {
+                        .add-to-cart__minus {
+                        }
+                        .add-to-cart__counter {
+                        }
+                        .add-to-cart__plus {
+                        }
+
+                        & > button {
+                            g {
+                            }
+                            &:hover {
+                                g {
+                                }
+                            }
+                        }
+
+                        &:hover {
+                        }
+                    }
+
+                    .card__cart {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+
+            .card__favorite {
+            }
         }
     }
 }

@@ -13,3 +13,22 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
+
+@mixin sectionMargin{
+    margin-top: $sectionMarginDesk;
+    @media(max-width: 1200px){  
+        margin-top: $sectionMarginTablet;
+    }
+    @media(max-width: 700px){  
+        margin-top: $sectionMarginMobile;
+    }
+}
+@mixin sectionMarginBottom{
+    margin-bottom: $sectionMarginDesk;
+    @media(max-width: 1200px){  
+        margin-bottom: $sectionMarginTablet;
+    }
+    @media(max-width: 700px){  
+        margin-bottom: $sectionMarginMobile;
+    }
+}

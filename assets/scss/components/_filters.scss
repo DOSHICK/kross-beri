@@ -90,21 +90,19 @@
         cursor: pointer;
         position: relative;
 
-        select{
+        select {
             display: none;
         }
 
         &:hover {
-            .filters__head{
-
-                span{
+            .filters__head {
+                span {
                     color: #212121;
                 }
 
-                .filters__condition{
+                .filters__condition {
                     transform: rotateY(180deg);
                 }
-
             }
             .filters__modal-body {
                 display: block;
@@ -131,7 +129,7 @@
             &.filters__modal-body_high {
                 padding: 20px;
             }
-            &.filters__modal-body_paddingless{
+            &.filters__modal-body_paddingless {
                 padding: 0;
             }
 
@@ -234,7 +232,6 @@
                     min-width: 234px;
 
                     .filters__sorting-option {
-
                         position: relative;
                         font-size: 14px;
                         font-weight: 300;
@@ -244,13 +241,13 @@
                         background: none;
                         text-align: start;
 
-                        border-bottom: #F3F3F3 1px solid;
-                        padding: 10px 40px 10px 20px;   
+                        border-bottom: #f3f3f3 1px solid;
+                        padding: 10px 40px 10px 20px;
 
                         transition: all 0.3s ease 0s;
                         cursor: pointer;
 
-                        &.active{
+                        &.active {
                             &::after {
                                 content: url("../images/filters-sorting-arrow.svg");
                                 display: block;
@@ -274,6 +271,132 @@
                 transform: translateY(calc(100% - 10px));
                 left: unset;
                 right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .filters {
+        .filters__list {
+            .filters__item {
+                &:last-child {
+                }
+                .filters__head {
+                    span {
+                    }
+                    .filters__condition {
+                    }
+                }
+
+                .filters__body {
+                }
+            }
+        }
+
+        .filters__sort {
+            display: block;
+            position: relative;
+
+            .filters__hint {
+                padding: 10px;
+                width: 230px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0;
+                transform: translateY(-100%);
+
+                p {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+
+                &::after {
+                    top: unset;
+                    right: 10px;
+                    bottom: 0;
+                    transform: translateY(100%);
+                }
+            }
+            .filters__sort-wrapper {
+                .filters__sort-btn {
+                }
+                .filters__sort-body {
+                }
+            }
+        }
+
+        .filters__modal-trigger {
+            select {
+            }
+
+            &:hover {
+                .filters__head {
+                    span {
+                    }
+
+                    .filters__condition {
+                    }
+                }
+                .filters__modal-body {
+                }
+            }
+
+            .filters__modal-body {
+                &.filters__modal-body_high {
+                    padding: 20px;
+                }
+                &.filters__modal-body_paddingless {
+                }
+
+                .filters__body-content {
+                    .filters__input-block {
+                        input {
+                        }
+                        span {
+                        }
+                    }
+                    .filters__submit {
+                    }
+
+                    .filters__size-block {
+                        .filters__size-title {
+                        }
+                        .filters__size-grid {
+                            .filters__size-btn {
+                                &:hover {
+                                }
+
+                                &.active {
+                                }
+                            }
+                        }
+                    }
+
+                    .filters__select {
+                        .filters__option {
+                            &.active {
+                            }
+                            &:last-child {
+                            }
+                        }
+                    }
+                    .filters__sorting {
+                        .filters__sorting-option {
+                            &.active {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.filters__modal-body_left {
+                }
+                &.filters__modal-body_right {
+                }
             }
         }
     }

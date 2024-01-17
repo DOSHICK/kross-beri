@@ -43,3 +43,34 @@
         }
     }
 }
+
+@media(max-width: 1200px){
+    .reviews {
+        grid-template-columns: repeat(3, 1fr);
+        .review {
+            &:last-child{
+                display: none;
+            }
+            .review__head {
+                .review__info {
+                    .review__img {
+                    }
+                    .review__name {
+                    }
+                }
+    
+                .review__stats {
+                    .review__stars {
+                    }
+                    .review__date {
+                    }
+                }
+            }
+    
+            .review__content {
+                .review__text {
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .gallery{
-    margin-top: 160px;
+    @include sectionMargin;
     .gallery__head{
         display: flex;
         flex-direction: row;
@@ -12,6 +12,14 @@
                 margin-right: 10px;
             }
             svg{}
+        }
+    }
+
+    .cards{
+        .card{
+            &:last-child{
+                display: none;
+            }
         }
     }
 }
