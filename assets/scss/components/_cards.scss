@@ -145,3 +145,93 @@
         }
     }
 }
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        .card {
+            .card__img {
+            }
+            .card__name {
+            }
+            .card__info {
+                .card__price {
+                }
+                .card__options {
+                    .add-to-cart {
+                        .add-to-cart__minus {
+                        }
+                        .add-to-cart__counter {
+                        }
+                        .add-to-cart__plus {
+                        }
+
+                        & > button {
+                            g {
+                            }
+                            &:hover {
+                                g {
+                                }
+                            }
+                        }
+
+                        &:hover {
+                        }
+                    }
+
+                    .card__cart {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+
+            .card__favorite {
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .cards {
+        .card {
+            .card__img {
+            }
+            .card__name {
+            }
+            .card__info {
+                .card__price {
+                }
+                .card__options {
+                    .add-to-cart {
+                        display: none;
+                        .add-to-cart__minus {
+                        }
+                        .add-to-cart__counter {
+                        }
+                        .add-to-cart__plus {
+                        }
+
+                        & > button {
+                            g {
+                            }
+                            &:hover {
+                                g {
+                                }
+                            }
+                        }
+
+                        &:hover {
+                        }
+                    }
+
+                    .card__cart {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+
+            .card__favorite {
+            }
+        }
+    }
+}

@@ -4,6 +4,9 @@
     @media(max-width: 774px){
         margin-bottom: 48px;
     }
+    @media(max-width: 500px){
+        margin-bottom: 20px;
+    }
 }
 
 @mixin resetBtnStyles{
