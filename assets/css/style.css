@@ -238,6 +238,7 @@ h5 {
   display: block;
 }
 .header .header__modal-trigger .header__modal-window {
+  z-index: 3;
   padding-top: 14px;
   display: none;
   position: absolute;
@@ -251,6 +252,7 @@ h5 {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   background: #fff;
+  z-index: 3;
 }
 .header .header__modal-trigger .header__modal-window .header__modal-list li {
   border-bottom: #f3f3f3 1px solid;
