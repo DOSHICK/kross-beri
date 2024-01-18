@@ -400,6 +400,11 @@
                 padding-top: 12px;
                 padding-bottom: 12px;
 
+                @media (max-width: 500px) {
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                }
+
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -407,6 +412,12 @@
                 }
 
                 a.header__item {
+                    &.header__item_logo {
+                        img {
+                            width: 36px;
+                            height: 38px;
+                        }
+                    }
                 }
                 button.header__item {
                     @include resetBtnStyles;
@@ -420,7 +431,12 @@
                         width: 32px;
                         height: 32px;
                         margin-bottom: 2px;
-                        g{
+
+                        @media (max-width: 500px) {
+                            width: 17px;
+                            height: 17px;
+                        }
+                        g {
                             transition: all 0.3s ease 0s;
                         }
                     }
@@ -429,20 +445,21 @@
                         font-weight: 400;
                         color: #21212140;
                         transition: all 0.3s ease 0s;
-
+                        @media (max-width: 500px) {
+                            font-size: 10px;
+                        }
                     }
 
                     cursor: pointer;
-                    &:hover{
+                    &:hover {
                         svg {
-                            g{
+                            g {
                                 opacity: 1;
                             }
                         }
                         span {
                             color: #212121;
                         }
-
                     }
                 }
             }

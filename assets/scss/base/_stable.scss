@@ -1,5 +1,4 @@
 body {
-
     &,
     & a,
     & button {
@@ -8,15 +7,14 @@ body {
         font-weight: 400;
         color: #212121;
         line-height: normal;
-        @media(max-width: 900px){
+        @media (max-width: 900px) {
             font-size: 14px;
         }
     }
 
-    @media(max-width: 1000px){
+    @media (max-width: 1000px) {
         height: calc(100% + 90px);
     }
-    
 }
 
 .container {
@@ -26,11 +24,11 @@ body {
 
     max-width: calc(1240px + (60px * 2));
 
-    @media(max-width: 1100px){
+    @media (max-width: 1100px) {
         padding-left: 40px;
         padding-right: 40px;
     }
-    @media(max-width: 700px){
+    @media (max-width: 700px) {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -40,14 +38,13 @@ body {
     color: #ca9eb0;
 }
 
-.btn{
-    background: #EDD7E0 !important;
+.btn {
+    background: #edd7e0 !important;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     border: none;
     outline: none;
-    &:hover{
-        
+    &:hover {
     }
 
     &.btn_cart {
@@ -59,9 +56,21 @@ body {
         justify-content: space-between;
         align-items: center;
         border-radius: 4px;
-        
-        svg{
+
+        svg {
             margin-right: 20px;
+        }
+        @media (max-width: 900px) {
+            padding: 14px 22px;
+            font-size: 14px;
+        }
+        @media (max-width: 900px) {
+            padding: 14px 22px;
+            font-size: 13px;
+            svg {
+                width: 17px;
+                height: 16px;
+            }
         }
     }
 }
@@ -71,10 +80,10 @@ h2 {
     font-weight: 300;
     line-height: 110%;
     text-transform: uppercase;
-    @media(max-width: 900px){
+    @media (max-width: 900px) {
         font-size: 40px;
     }
-    @media(max-width: 900px){
+    @media (max-width: 900px) {
         font-size: 28px;
     }
 }
@@ -82,14 +91,13 @@ h3 {
     font-size: 38px;
     font-weight: 300;
     text-transform: uppercase;
-    @media(max-width: 900px){
+    @media (max-width: 900px) {
         font-size: 14px;
     }
 }
 h4 {
     font-size: 16px;
     font-weight: 500;
-    
 }
 h5 {
     font-size: 14px;

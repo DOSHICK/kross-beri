@@ -4,3 +4,10 @@
         margin-bottom: 65px;
     }
 }
+@media(max-width: 500px){
+    .tiles{
+        .tiles__title{
+            margin-bottom: 30px;
+        }
+    }
+}

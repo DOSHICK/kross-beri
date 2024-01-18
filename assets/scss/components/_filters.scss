@@ -4,6 +4,30 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    .filters__open-btn {
+        display: none;
+        @include resetBtnStyles;
+
+        flex-direction: row;
+        align-items: center;
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+        span {
+            margin-left: 4px;
+            color: #21212140;
+            font-size: 10px;
+        }
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        &:hover{
+            span{
+            color: #212121;
+
+            }
+        }
+    }
     .filters__list {
         display: flex;
         flex-direction: row;
@@ -347,6 +371,117 @@
             .filters__modal-body {
                 &.filters__modal-body_high {
                     padding: 20px;
+                }
+                &.filters__modal-body_paddingless {
+                }
+
+                .filters__body-content {
+                    .filters__input-block {
+                        input {
+                        }
+                        span {
+                        }
+                    }
+                    .filters__submit {
+                    }
+
+                    .filters__size-block {
+                        .filters__size-title {
+                        }
+                        .filters__size-grid {
+                            .filters__size-btn {
+                                &:hover {
+                                }
+
+                                &.active {
+                                }
+                            }
+                        }
+                    }
+
+                    .filters__select {
+                        .filters__option {
+                            &.active {
+                            }
+                            &:last-child {
+                            }
+                        }
+                    }
+                    .filters__sorting {
+                        .filters__sorting-option {
+                            &.active {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.filters__modal-body_left {
+                }
+                &.filters__modal-body_right {
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .filters {
+        .filters__open-btn {
+            display: flex;
+        }
+        .filters__list {
+            display: none;
+            .filters__item {
+                &:last-child {
+                }
+                .filters__head {
+                    span {
+                    }
+                    .filters__condition {
+                    }
+                }
+
+                .filters__body {
+                }
+            }
+        }
+
+        .filters__sort {
+            .filters__hint {
+                display: none;
+                p {
+                }
+
+                &::after {
+                }
+            }
+            .filters__sort-wrapper {
+                .filters__sort-btn {
+                }
+                .filters__sort-body {
+                }
+            }
+        }
+
+        .filters__modal-trigger {
+            select {
+            }
+
+            &:hover {
+                .filters__head {
+                    span {
+                    }
+
+                    .filters__condition {
+                    }
+                }
+                .filters__modal-body {
+                }
+            }
+
+            .filters__modal-body {
+                &.filters__modal-body_high {
                 }
                 &.filters__modal-body_paddingless {
                 }
