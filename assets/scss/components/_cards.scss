@@ -34,45 +34,6 @@
                 display: flex;
                 flex-direction: row;
 
-                .add-to-cart {
-                    margin-right: 10px;
-                    padding: 9px 6px;
-                    border-radius: 4px;
-                    border: 1px solid #21212114; //border-opacity 14%
-                    min-width: 94px;
-
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    transition: all 0.3s ease 0s;
-
-                    .add-to-cart__minus {
-                        @include resetBtnStyles;
-                    }
-                    .add-to-cart__counter {
-                    }
-                    .add-to-cart__plus {
-                        @include resetBtnStyles;
-                    }
-
-                    & > button {
-                        g {
-                            transition: all 0.3s ease 0s;
-                            cursor: pointer;
-                        }
-                        &:hover {
-                            g {
-                                opacity: 1;
-                            }
-                        }
-                    }
-
-                    &:hover {
-                        border: 1px solid #212121; //border-opacity 14%
-                    }
-                }
-
                 .card__cart {
                     @include resetBtnStyles;
                     padding: 9px 17px;
@@ -112,26 +73,7 @@
                 .card__price {
                 }
                 .card__options {
-                    .add-to-cart {
-                        .add-to-cart__minus {
-                        }
-                        .add-to-cart__counter {
-                        }
-                        .add-to-cart__plus {
-                        }
-
-                        & > button {
-                            g {
-                            }
-                            &:hover {
-                                g {
-                                }
-                            }
-                        }
-
-                        &:hover {
-                        }
-                    }
+                    
 
                     .card__cart {
                         &:hover {
@@ -157,26 +99,7 @@
                 .card__price {
                 }
                 .card__options {
-                    .add-to-cart {
-                        .add-to-cart__minus {
-                        }
-                        .add-to-cart__counter {
-                        }
-                        .add-to-cart__plus {
-                        }
-
-                        & > button {
-                            g {
-                            }
-                            &:hover {
-                                g {
-                                }
-                            }
-                        }
-
-                        &:hover {
-                        }
-                    }
+                    
 
                     .card__cart {
                         &:hover {
@@ -201,27 +124,6 @@
                 .card__price {
                 }
                 .card__options {
-                    .add-to-cart {
-                        display: none;
-                        .add-to-cart__minus {
-                        }
-                        .add-to-cart__counter {
-                        }
-                        .add-to-cart__plus {
-                        }
-
-                        & > button {
-                            g {
-                            }
-                            &:hover {
-                                g {
-                                }
-                            }
-                        }
-
-                        &:hover {
-                        }
-                    }
 
                     .card__cart {
                         &:hover {
